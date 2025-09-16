@@ -1548,9 +1548,9 @@ body:has(.main.main--new) .footer {
 }
 
 .product-reviews__body._minimized .product-reviews__toggle-btn > span::after {
-  -webkit-transform: translateY(0px) rotate(0deg);
-      -ms-transform: translateY(0px) rotate(0deg);
-          transform: translateY(0px) rotate(0deg);
+  -webkit-transform: translateY(-1px) rotate(90deg);
+      -ms-transform: translateY(-1px) rotate(90deg);
+          transform: translateY(-1px) rotate(90deg);
 }
 
 .product-reviews__body._minimized .product-reviews__main,
@@ -1669,14 +1669,14 @@ body:has(.main.main--new) .footer {
 
 .product-reviews__toggle-btn > span::after,
 .product-reviews__modal-btn > span::after {
-  content: "▼";
+  content: "ᐅ";
   padding: 0 4px;
   display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI Symbol", "Apple Color Emoji", "Noto Color Emoji", Arial, Helvetica, sans-serif;
   font-size: 10px;
-  -webkit-transform: translateY(-1px) rotate(-180deg);
-      -ms-transform: translateY(-1px) rotate(-180deg);
-          transform: translateY(-1px) rotate(-180deg);
+  -webkit-transform: translateY(-1px) rotate(-90deg);
+      -ms-transform: translateY(-1px) rotate(-90deg);
+          transform: translateY(-1px) rotate(-90deg);
 }
 
 .product-reviews__toggle-btn {
@@ -1835,19 +1835,20 @@ body:has(.main.main--new) .footer {
 }
 
 .product-reviews__filter._active._active--reverse::after {
-  -webkit-transform: translateY(-1px) rotate(-180deg);
-      -ms-transform: translateY(-1px) rotate(-180deg);
-          transform: translateY(-1px) rotate(-180deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .product-reviews__filter::after {
-  content: "🡣";
-  padding: 0 3px;
+  content: "ᐅ";
+  padding: 0 4px;
   display: inline-block;
-  font-size: 12px;
-  -webkit-transform: translateY(1px) rotate(0deg);
-      -ms-transform: translateY(1px) rotate(0deg);
-          transform: translateY(1px) rotate(0deg);
+  font-family: "Segoe UI Symbol", "Apple Color Emoji", "Noto Color Emoji", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -3042,12 +3043,14 @@ body:has(.main.main--new) .footer {
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translate3d(0, 15px, 0);
             transform: translate3d(0, 15px, 0);
   }
 
   100% {
     opacity: 1;
+    visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
@@ -3056,12 +3059,14 @@ body:has(.main.main--new) .footer {
 @keyframes fadeInUp {
   0% {
     opacity: 0;
+    visibility: hidden;
     -webkit-transform: translate3d(0, 15px, 0);
             transform: translate3d(0, 15px, 0);
   }
 
   100% {
     opacity: 1;
+    visibility: visible;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
   }
